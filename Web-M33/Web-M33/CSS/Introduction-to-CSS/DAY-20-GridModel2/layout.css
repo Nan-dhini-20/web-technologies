@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.grid-parent{
+    width:100%;
+    height:100vh;
+    background-color: white;
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    gap:5px;
+}
+.grid-item{
+    padding:30px;
+    font-size:20px;
+    background-color: bisque;
+    color:brown;
+    border:1px solid brown;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.header{
+    grid-column-start: 1; 
+    grid-column-end: 5;   /*always take lines n+1 count, so instead 4 columns 5*/  
+   /* grid-column:span 4;   optional method*/
+}
+.aside1{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.main{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.aside2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.section{
+    grid-column:2/3;   /*shorthand property for grid column and same for row too*/  
+}
+.footer{
+    grid-column:1/5;
+}

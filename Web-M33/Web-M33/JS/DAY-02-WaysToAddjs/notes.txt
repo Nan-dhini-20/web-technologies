@@ -1,0 +1,11 @@
+day 2
+Ways to add Js:
+
+1.Inline js =>(only used_for/supports events)
+
+2.Internal js 
+=><script>________ </script>=> (at the end of the body after html)
+
+3.External js 
+=>separate file.js 
+=> script tag accepts src=" "

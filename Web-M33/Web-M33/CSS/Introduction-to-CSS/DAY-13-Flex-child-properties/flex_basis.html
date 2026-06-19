@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .parent{
+            width:800px;
+            height:650px;
+            display: flex;
+            border:1px solid black;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+            width:300px;
+            height:300px;
+            background-color:teal;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            border:2px solid white;
+        }
+        .box:nth-child(2){
+            flex-basis: 500px;
+            /*sets the width for the child items in the flex container*/
+        }
+        .box:nth-child(1){
+            align-self: flex-start;
+            /*aligns the item to the start of the cross axis*/
+        }
+        .box:nth-child(3){
+            align-self:flex-end;
+            /*aligns the item to the end of the cross axis*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex basis and align self</h1>
+    <div class="parent">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
+</body>
+</html>

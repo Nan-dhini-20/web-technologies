@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent{
+    width:700px;
+    height:250px;
+    display: flex;
+    border:1px solid black;
+    justify-content: space-around;
+    align-items: center;
+}
+.box:nth-child(2){
+    order: 1;         /*default order value is 0.*/
+}
+.box:nth-child(3){
+    order:10;
+}
+.box:nth-child(5){
+    order: -1;
+}
+.box{
+    width:100px;
+    height:100px;
+    background-color:teal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

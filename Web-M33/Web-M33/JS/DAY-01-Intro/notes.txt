@@ -1,0 +1,159 @@
+Day 1
+what is java script?
+   It is a high level programming lang as well as scripting lang which is used to make web page dynamic.
+
+   scripting lang:
+      it means , there will be no compiler, 
+      JS code will be executed directly at run time, 
+      it is use  to perform automated task, eg : display pop-up notification on browser.
+
+   It is use add functionality to the static webpages as well as for interaction between user and UI.
+
+   It is one of the lang understood by the browser and bowser natively understand HTML & CSS.
+
+   JS is use to create server side logic after the introduction of node.js .
+
+   We can run the JS on the both side frontend(react.js, angular.js, vie.js, next.js) as well as backend(node.js, express.js)
+
+   JS has huge eco-system which include JS libraries & frameworks.
+
+History :
+   intoduce in the year 1995 
+   created within 10 days by Brendan Eich (CEO of Brave browser).
+   name:- Mocha --> livescript --> JavaScript
+
+What is ECMA?
+   ECMA - Europen Computer Manufacture Association.
+   its a organization which will provide technical standard (version, specification..) for JS.
+   ECMA script - Es6 is major update(in 2015)
+   whatever concept intro in JS is known as ES6 concept .
+   In every June ECMA will release new version if JS.
+
+Characteristic of JS:
+   ->Client-side scripting lang
+   ->Dynamic typed programming lang
+   ->Weakly typed programming lang
+   ->Interpreted programming lang
+   ->Single threaded programming lang
+
+   ->Synchronous in Nature
+   ->Asynchronous in Nature 
+   ->Object-based programming lang
+   ->Event-driven 
+   ->Run on both backend , frontend
+   ->client-side validaton
+   ->cross-platform(mac, window)
+
+
+   Features or Characteristics of JS
+   1.Client-side scripting language
+     (browser)    (no compiler)
+
+     -> Javascript is run on the user's browser(chrome, edge, safari, firefox,etc.)
+     -> Browser will download the JS files to execute.
+
+   2.Dynamically Typed programming language
+
+     -> There is no need to mention the datatype.
+     -> The datatype will be assigned by the JS engine at the runtime of JS file.(the js code is directly run as there is no compiler present(no compilation)).
+
+     let a=10;
+     console.log(a);//10
+               ^
+               |
+               number
+
+   3.Weakly typed programming language.
+
+     -> The javascript will change the datatype when it is needed(required).
+     console.log(  5  +  "5"  );//55
+                   |      |
+                   V      V
+                  num    string
+                   |
+                   V
+                  "5"
+   
+   4.Interpreted programming language.
+   
+     -> The interpreted programming language is a language which will read and execute the code without compilation by the interpreter or JS engine.
+     
+     -> code will execute line-by-line manner.
+     (execution stops after meeting a bad line).
+
+     1. 🗸
+     2. 🗸
+     3. 🗸
+     4. 🗸
+     5. ⤫
+     6. doesnt execute
+     7. doesnt execute
+
+   5.Single Threaded programming language
+       |          |
+       v          v
+       one  (A piece of code)
+
+       -> A single threaded programming language means one task at a time.
+       ->Single ->one
+       -> Thread -> a piece of code
+
+        __________       __________      __________
+       |   task1  | ->  |   task2  | -> |   task3  |
+       |__________|     |__________|    |__________|
+       -> Javascript is a single threaded programming language because it is having only one *call stack*.
+       -> Inside the call stack one task will be executed at a time. the other tasks wait to be executed in a queue.
+
+   6.Synchronous in nature.
+
+     -> By default javascript follows synchronous behaviour. 
+     -> Synchronous means the code will be executed in a sequential format.
+     -> One line, one task at a time until and unless the execution of the first line will not complete; the second line has to wait for execution.
+
+     eg:
+     <script>
+     console.log("Task Started");
+     alert("Task Paused");// Block the execution of the next line until and unless you click on the ok button.
+     console.log("Task ended");
+     </script>
+     -> Blocking in nature
+
+   7.Asynchronous in nature.
+
+     ->We can make javascript asynchronous by using timing functions, promises, etc.
+     ->We can perform multiple tasks at a time even without blocking the code
+
+     -> non blocking in nature.
+
+     eg:
+
+     <script>
+     console.log("Task Started");
+     //Task will execute in the background without blocking the execution of next lines.
+     setTimeout(()=>{
+        alert("Task Paused");
+     },5000);
+     console.log("Task ended");
+     </script>
+
+   8.Object based programming language.
+    
+     -> Data will be stored in the form of object for memory allocation.
+     -> It is also called as Object Based prototype.
+
+   9.Event Driven
+
+     -> Javascript supports multiple types of events such as mouse event, form events, keyboard events, etc.
+
+   10.Run-on-both-side
+
+     ->Javascript will be executed on client-side as well as on the server-side.
+
+   11.Client-side-validation
+
+     ->Javascript will validate the data on the brower side itself before sending to the server.
+
+     eg: form data (if password and confirm_password are not matching, it will display an error notification on the browser side itself)
+
+   12.Cross-platform
+     -> js will execute of windows, mac, linux and mobile devices.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .radial{
+            width:500px;
+            height: 500px;
+            border:1px solid black;
+            border-radius: 50%;
+        }
+        #radial1{
+            background:radial-gradient(rgb(225, 104, 104), rgb(210, 210, 122), rgb(224, 171, 73));
+        }
+        #radial2{
+            background: repeating-radial-gradient(circle, red 20%, yellow 30%, orange 40%);
+        }
+        #radial3{
+            background: repeating-radial-gradient( silver 20%, black 30%);
+        }
+    </style>
+</head>
+<body>
+    <div class="radial" id="radial1"></div>
+    <div class="radial" id="radial2"></div>
+    <div class="radial" id="radial3"></div>
+</body>
+</html>

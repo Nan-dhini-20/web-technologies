@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <center>
+      <h2><mark>Student Registration Form</mark></h2>
+    </center>
+
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <table>
+          <tr>
+            <td><label>First Name:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Last Name:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Phone Number:</label></td>
+            <td><input type="tel" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Date of Birth:</label></td>
+            <td><input type="date" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Gender:</label></td>
+            <td>
+              <input type="radio" name="gender" /> Male
+              <input type="radio" name="gender" /> Female
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Academic Information</legend>
+
+        <table>
+          <tr>
+            <td><label>Select Course:</label></td>
+            <td>
+              <select>
+                <option disabled selected>-- Select a Course --</option>
+                <option>B.Tech</option>
+                <option>M.Tech</option>
+                <option>MBA</option>
+                <option>BCA</option>
+                <option>BSc</option>
+                <option>BCom</option>
+                <option>MCA</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Skills:</label></td>
+            <td>
+              <input type="text" placeholder="Select or type a skill" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Address:</label></td>
+            <td>
+              <textarea rows="5" cols="40"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Login Credentials</legend>
+
+        <table>
+          <tr>
+            <td><label>Username:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Password:</label></td>
+            <td><input type="password" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Confirm Password:</label></td>
+            <td><input type="password" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Declaration</legend>
+
+        <table>
+          <tr>
+            <td>
+              <input type="checkbox" />
+              I agree to the Terms & Conditions
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="submit" value="Register" />
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para::first-letter{
+            color:bisque;
+            background-color: brown;
+            size:50px;
+            font-weight: 100;
+        }
+        #para::first-line{
+            color:rgb(209, 136, 230)
+        }
+        #para::after{
+            content: "Content Added with the help of CSS";
+            color:brown;
+        }
+        #para::before{
+            content: "Content will added before with the help of CSS. " ;
+            color:rgb(223, 170, 105);
+        }
+        li::marker{
+            color:burlywood;
+            background-color: blueviolet;
+
+        }
+        #para::selection{
+            color:cornflowerblue;
+            background-color: rgb(170, 193, 225);
+        }
+        input::placeholder{
+            color:rgb(214, 95, 95);
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pesudo element Selector (::)</h1>
+    <p>PES is used to change the same part of HTML element.</p>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique, eaque, suscipit magni maxime inventore sunt voluptate quia, delectus soluta sit nemo amet illo ratione eligendi ea excepturi consequatur voluptatum.
+    Neque dolore aliquid labore velit dolores maiores repudiandae reprehenderit autem placeat vel, alias, voluptatum magni dicta temporibus ipsum ullam commodi excepturi, adipisci ea nihil explicabo deserunt sit cupiditate? Consectetur, possimus.
+    Perspiciatis ex, quo voluptate quisquam eligendi enim consectetur? Dolor quidem, mollitia quibusdam tempora ducimus quos culpa sequi, distinctio cupiditate ullam similique provident nemo! Sed sequi, earum eius aut aspernatur incidunt! </p>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <hr>
+    <label for="first">First Name:</label>
+    <input type="text" placeholder="Enter your first name" id="first"/>
+</body>
+</html>

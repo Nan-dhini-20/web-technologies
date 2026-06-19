@@ -1,0 +1,12 @@
+Variable:
+It is a container which is used to store the data.
+we can declare variables in 3 ways:
+   1. var
+   2.let
+   3.const
+
+      Var                                   let                               const
+1. Redec is possible                 1.redec is not possible            1. redec is not possible.
+2. reinit is possible                2. reinit is possible              2. reinit is not possible.
+3. while declaring initialization    3. while declaring initialization  3. while declaring initialization  
+ is not compulsory.                   is not compulsory.                 is compulsory.

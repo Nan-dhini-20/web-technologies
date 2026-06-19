@@ -1,0 +1,67 @@
+Day 3
+__Ways to add javascript:__
+
+-> there are mainly to ways to add js
+1) Internal js
+2)External js
+
+__Internal JS:__
+->We can write the javascript code inside the same html file with the help of the <script> tag.
+->We have to add the <script> tag at the end of the <body> tag.
+Syntax:
+  <body>
+     <h1>helo</h1>
+     <script>
+        console.log("Internal JS Written");
+     </script>
+  </body>
+
+__External JS__
+-> We can write down js code inside a separate ".js" file.
+-> We can connect extenal js file to the html document with the help of <script> tag with src="".
+
+  Syntax:
+     <script src="./filename.js">
+
+     </script>
+
+Note:
+  Always add the <script> tag at the end of the <body> tag.
+  ( first css will be loaded , followed by the body content(html). Then finally, js will be loaded.)
+
+__Inline JS:__
+  It is used to trigger events.
+  Refer example code.
+
+
+__NodeJS__  
+ 
+ Node js is a javascript runtime environment.
+ JavaScript is by default run in the browser. When we want to run the javascript to run it outside of a browser, we have to use nodejs.
+ Used for:
+ ->create servers
+ ->web applications
+ ->cmd tools
+
+ __How to check nodejs is installed or not? (version)__
+-> open terminal, powershell, 
+     -> node -v
+     -> npm -v
+
+__Command to run js file in Nodejs:__
+->Use powershell
+->change directry to folder that has the js file.
+->node fileName.js     
+
+What is defer attribute and y do we use it along with script?
+   to give the js file in the head section, but to delay the script from running until the parsing of html so that its asynchronous.
+
+Fundamentals of JS:
+__Tokens__
+The smallest unit of a programming language.
+1)Keywords
+2)Identifiers
+3)Literals
+4)Operators
+5)Separators
+6)Comments

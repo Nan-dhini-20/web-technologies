@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align:center;
+            margin-bottom: 20px;
+        }
+        .parent{
+            width:80%;
+            height:500px;
+            border:1px solid;
+            margin:30px auto;
+            position:relative;
+        }
+        .child{
+            width:120px;
+            height:100px;
+            background-color: rgb(207, 177, 141);
+            color:white;
+            line-height:100px;
+            text-align: center;
+            position:absolute;
+        }
+        #child2{
+            right:0;
+        }
+        #child3{
+            bottom:0;
+        }
+        #child4{
+            right:0;
+            bottom:0;
+        }
+        #child5{
+            top:42%;
+            left:42%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parent Relative and Absolute Positioning</h1>
+    <div class="parent">
+        <div class="child" id="child1">Child1</div>
+        <div class="child" id="child2">Child2</div>
+        <div class="child" id="child3">Child3</div>
+        <div class="child" id="child4">Child4</div>
+        <div class="child" id="child5">Child5</div>
+    </div>
+</body>
+</html>

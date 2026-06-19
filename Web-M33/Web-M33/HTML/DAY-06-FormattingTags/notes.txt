@@ -1,0 +1,32 @@
+# Formatting Tags:
+-> The formatting tags are used to format the text for better look (visual apperance) and feel.
+-> Formatting Tags are inline-level elements.
+-> Formattings tags are divided into 2 types:
+    1. Physical Tags
+    2. Logical Tags
+
+1. Physical Tags:
+-> The Physical tags are used to provide the just physical apperance for the text.
+-> For Ex: <b>, <u>, <i>, etc.
+
+2. Logical Tags:
+-> The Logical tags are used to provide the meaning or logic to the text.
+-> For Ex: <strong>, <ins> -> inserted, <em> -> Emphasized
+
+# Some Types of Formatting Tags:
+1. <b>....</b> -> To make text as bold.
+2. <u>....</u> -> To provide underline for the text.
+3. <i>....</i> -> It is used to make text slightly tilted (italic)
+4. <sup>...</sup> -> sup stands for superscript tag. (above the baseline)
+5. <sub>...</sub> -> sub stands for subscript tag. (below the baseline)
+6. <strike>...</strike> -> To provide the strike-through to the text. (Deprecated = No Longer in Use)
+7. <del>...</del> -> It is used to represent the deleted text.
+8. <mark>....</mark> -> It is used to highlight the text.
+9. <small>...</small> -> To make text little bit small compare to normal text.
+10. <big>...</big> -> To make text little bit big compare to normal text.
+
+11. <strong>...</strong> -> Logical Formatting tag -> It is used make text as strong means bold as well as logical.
+12. <ins>...</ins> -> Logical Formatting tag -> It is represents the text inserted in my document. (provides underline)
+13. <em>...</em> -> Logical Formatting tag -> It is used to make text as italic.
+
+14. <code>...</code> -> To add monospace font to the text.

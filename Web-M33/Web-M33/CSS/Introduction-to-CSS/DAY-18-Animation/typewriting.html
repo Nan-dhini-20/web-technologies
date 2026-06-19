@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: monospace;
+        }
+        body{
+            background-color: black;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height:100vh;
+
+        }
+        h1{
+            color:cornsilk;
+            font-size:100px;
+            animation:typewriter 5s steps(25) infinite, blink 1s ease infinite;
+            white-space: nowrap;
+            overflow:hidden;
+            border-right:2px solid cornsilk;
+
+        }
+        @keyframes typewriter{
+            from{
+                width:0ch;
+            }
+            to{
+                width:25ch;
+            }
+
+        }
+        @keyframes blink{
+            to{
+                border-right:transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello! I'm learning CSS</h1>
+</body>
+</html>

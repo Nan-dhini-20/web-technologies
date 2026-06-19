@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <form>
+        <fieldset>
+            <legend><h1>Student Registration Form</h1></legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="gender" name="gender" value="male" required>Male
+                <input type="radio" id="gender" name="gender" value="female" required>Female
+                <input type="radio" id="gender" name="gender" value="others" required>Others
+                <br><br>
+                <label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+                <label for="skills">Skills:</label>
+                <input type="checkbox" id="skills" name="HTML" value="HTML" required>HTML
+                <input type="checkbox" id="skills" name="CSS" value="CSS" required>CSS
+                <input type="checkbox" id="skills" name="JavaScript" value="JavaScript" required>JavaScript
+                <input type="checkbox" id="skills" name="Python" value="Python" required>Python
+                <input type="checkbox" id="skills" name="Java" value="Java" required>Java
+                <br><br>
+                <label for="file">Upload your Resume</label>
+                <input type="file" id="file" name="file">
+                <br><br>
+                <button type="submit" value="submit">Submit</button>
+                <button type="reset" value="reset" >Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>

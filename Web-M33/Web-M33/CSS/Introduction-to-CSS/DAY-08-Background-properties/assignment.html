@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#e9e9e9;
+}
+
+/* TOP IMAGE SECTION */
+
+.banner{
+    width:100%;
+    height:150px;
+    background-image:url("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+/* MAIN SECTION */
+
+.container{
+    width:85%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.title p{
+    color:gray;
+    font-size:18px;
+}
+
+/* CARD SECTION */
+
+.property-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:25px;
+}
+
+/* PROPERTY CARD */
+
+.card{
+    width:23%;
+    height:180px;
+    border-radius:10px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.3);
+}
+
+/* DARK OVERLAY */
+
+.overlay{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* LABEL */
+
+.label{
+    position:absolute;
+    top:10px;
+    left:10px;
+    padding:5px 12px;
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+.rent{
+    background-color:#e91e63;
+}
+
+.sale{
+    background-color:orange;
+}
+
+/* CONTENT */
+
+.content{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+    color:white;
+    z-index:1;
+}
+
+.content h2{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.content p{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.price{
+    display:inline-block;
+    padding:6px 14px;
+    background-color:#24b36b;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:14px;
+    border:1px solid white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="banner"></div>
+<div class="container">
+
+    <div class="title">
+        <h1>Recent Properties</h1>
+        <p>Discover how much the latest properties have been sold for.</p>
+    </div>
+
+    <div class="property-container">
+
+        <!-- CARD 1 -->
+        <div class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop');">
+
+            <div class="overlay"></div>
+
+            <div class="label rent">FOR RENT</div>
+
+            <div class="content">
+                <h2>176 Kingsberry Anderson</h2>
+                <p>📍 Rochester, NY 14626</p>
+                <div class="price">$3100/month</div>
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop');">
+
+            <div class="overlay"></div>
+
+            <div class="label sale">FOR SALE</div>
+
+            <div class="content">
+                <h2>45 Lianne Dr</h2>
+                <p>📍 Tasley, VA 23441</p>
+                <div class="price">$15430/month</div>
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1200&auto=format&fit=crop');">
+
+            <div class="overlay"></div>
+
+            <div class="label rent">FOR RENT</div>
+
+            <div class="content">
+                <h2>6101 Aqua Ave</h2>
+                <p>📍 Miami Beach, FL</p>
+                <div class="price">$1255/month</div>
+            </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop');">
+
+            <div class="overlay"></div>
+
+            <div class="label rent">FOR RENT</div>
+
+            <div class="content">
+                <h2>339 N Oakhurst Dr</h2>
+                <p>📍 Beverly Hills, CA</p>
+                <div class="price">$3000/month</div>
+            </div>
+
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=1200&auto=format&fit=crop');">
+
+            <div class="overlay"></div>
+
+            <div class="label sale">FOR SALE</div>
+
+            <div class="content">
+                <h2>85 Elmwood Dr</h2>
+                <p>📍 Austin, TX</p>
+                <div class="price">$9340/month</div>
+            </div>
+
+        </div>
+
+        <!-- CARD 6-->
+        <div class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop');">
+
+            <div class="overlay"></div>
+
+            <div class="label rent">FOR RENT</div>
+
+            <div class="content">
+                <h2>124 Anderson</h2>
+                <p>📍 Rochester, YZ 23427</p>
+                <div class="price">$2570/month</div>
+            </div>
+
+        </div>
+
+        <!-- CARD 7-->
+        <div class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop');">
+
+            <div class="overlay"></div>
+
+            <div class="label rent">FOR RENT</div>
+
+            <div class="content">
+                <h2>102 Parkside Blvd</h2>
+                <p>📍 Denver, CO</p>
+                <div class="price">$2200/month</div>
+            </div>
+
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1200&auto=format&fit=crop');">
+
+            <div class="overlay"></div>
+
+            <div class="label rent">FOR RENT</div>
+
+            <div class="content">
+                <h2>5321 Aqua Ave</h2>
+                <p>📍 Miami Beach, FL</p>
+                <div class="price">$3253/month</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

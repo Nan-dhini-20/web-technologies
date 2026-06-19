@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <title>Task in flex</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: hsl(0, 0%, 98%);
+      padding: 40px 20px;
+    }
+
+    .container{
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .heading h1{
+      font-weight: 200;
+      color: hsl(234, 12%, 34%);
+    }
+
+    .heading h2{
+      font-weight: 600;
+      color: hsl(234, 12%, 34%);
+      margin-bottom: 15px;
+    }
+
+    .heading p{
+      font-size: 15px;
+      color: hsl(212, 6%, 44%);
+      max-width: 500px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .cards{
+      margin-top: 60px;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .middle{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      order: 2;
+    }
+
+    .card{
+      width: 320px;
+      min-height: 220px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      position: relative;
+      text-align: left;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+
+    .card h3{
+      color: hsl(234, 12%, 34%);
+      margin-bottom: 10px;
+    }
+
+    .card p{
+      font-size: 15px;
+      color: hsl(212, 6%, 44%);
+      line-height: 1.6;
+    }
+
+    .card img{
+      width: 60px;
+      position: absolute;
+      right: 25px;
+      bottom: 25px;
+    }
+
+    .cyan{
+      border-top: 4px solid hsl(180, 62%, 55%);
+      order: 1;
+    }
+
+    .red{
+      border-top: 4px solid hsl(0, 78%, 62%);
+    }
+
+    .orange{
+      border-top: 4px solid hsl(34, 97%, 64%);
+    }
+
+    .blue{
+      border-top: 4px solid hsl(212, 86%, 64%);
+      order: 2;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="heading">
+      <h1>Reliable, efficient delivery</h1>
+      <h2>Powered by Technology</h2>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project 
+        data points to ensure that your project is successful
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card cyan">
+        <h3>Supervisor</h3>
+        <p>
+          Monitors activity to identify project roadblocks
+        </p>
+        <img src="images/icon-supervisor.svg">
+      </div>
+
+      <div class="middle">
+        <div class="card red">
+          <h3>Team Builder</h3>
+          <p>
+            Scans our talent network to create the optimal team 
+            for your project
+          </p>
+          <img src="images/icon-team-builder.svg">
+        </div>
+
+        <div class="card orange">
+          <h3>Karma</h3>
+          <p>
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img src="images/icon-karma.svg">
+        </div>
+
+      </div>
+
+      <div class="card blue">
+        <h3>Calculator</h3>
+        <p>
+          Uses data from past projects to provide better delivery estimates
+        </p>
+        <img src="images/icon-calculator.svg">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

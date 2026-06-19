@@ -1,0 +1,1 @@
+console.log("Connected external js file to the html");
